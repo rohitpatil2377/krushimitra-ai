@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- कृषीमित्र AI app icon.
+
+       v2. In v1 the stem was a stroke painted with a gradient; the renderer dropped it, leaving
+       two leaves floating over a grey bar that read as a plate. Every shape here is now a FILLED
+       path in a flat colour - no gradient strokes, nothing a rasteriser can silently lose.
+
+       Constraints this answers:
+        * Legible at 48 px on a tab bar and under a circular Android mask: few shapes, thick
+          forms, nothing within ~12% of the edge.
+        * Brand palette only - #2E7D32 / #43A047 / #F9A825 from src/constants/colors.ts.
+        * The arc is the one "AI" cue: the plant is being looked at. A sprout alone is every
+          agri app. No circuitry, no robots.
+        * No text - Devanagari turns to mud at icon size and the launcher prints the name anyway.
+  -->
+  <rect width="1024" height="1024" rx="224" fill="#F4F8F1"/>
+
+  <!-- scan arc: two clean sweeps, open at the sides so it reads as deliberate, not as a
+       broken ring. Drawn first so the plant sits on top of it. -->
+  <g fill="none" stroke="#2E7D32" stroke-opacity="0.22" stroke-width="30" stroke-linecap="round">
+    <path d="M250 640 A 290 290 0 0 1 480 232"/>
+    <path d="M774 640 A 290 290 0 0 0 596 243"/>
+  </g>
+
+  <!-- sun / harvest accent -->
+  <circle cx="742" cy="286" r="62" fill="#F9A825"/>
+
+  <!-- soil: a shallow mound the stem grows out of, not a floating bar -->
+  <path d="M296 772 C296 726 380 700 512 700 C644 700 728 726 728 772 Z" fill="#8D6E63"/>
+
+  <!-- stem: a filled, slightly tapered path so no renderer can drop it -->
+  <path d="M489 716 C489 600 492 540 497 470 L527 470 C532 540 535 600 535 716 Z"
+        fill="#2E7D32"/>
+
+  <!-- left leaf -->
+  <path d="M497 576 C404 580 330 520 312 420 C412 406 489 468 497 576 Z" fill="#2E7D32"/>
+  <!-- right leaf, lighter so the two read apart at small sizes -->
+  <path d="M527 512 C620 508 694 448 712 348 C612 334 535 404 527 512 Z" fill="#43A047"/>
+</svg>

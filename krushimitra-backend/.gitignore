@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+_storage/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+app/ml/checkpoints/*
+app/ml/datasets/*
+!app/ml/**/.gitkeep
+data/captures/
+data/market/
+
+# SQLite dev database — contains farmer phone numbers and plots
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+.env.*
+!.env.example

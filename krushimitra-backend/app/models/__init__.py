@@ -1,0 +1,33 @@
+from app.models.models import (
+    Conversation,
+    CropCycle,
+    CropEvent,
+    Diagnosis,
+    ExpertLabel,
+    Farm,
+    Farmer,
+    HealthScore,
+    Image,
+    KbChunk,
+    KbDocument,
+    Message,
+    Recommendation,
+    SeverityAssessment,
+)
+
+__all__ = [
+    "Conversation",
+    "CropCycle",
+    "CropEvent",
+    "Diagnosis",
+    "ExpertLabel",
+    "Farm",
+    "Farmer",
+    "HealthScore",
+    "Image",
+    "KbChunk",
+    "KbDocument",
+    "Message",
+    "Recommendation",
+    "SeverityAssessment",
+]

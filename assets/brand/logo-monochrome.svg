@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Themed-icon variant: the launcher recolours this, so it must be ONE flat silhouette on
+       transparency. The sun dot and the scan arc are dropped - once flattened to a single tone
+       they read as specks and scratches rather than meaning. -->
+  <g fill="#000000">
+    <path d="M296 772 C296 726 380 700 512 700 C644 700 728 726 728 772 Z"/>
+    <path d="M489 716 C489 600 492 540 497 470 L527 470 C532 540 535 600 535 716 Z"/>
+    <path d="M497 576 C404 580 330 520 312 420 C412 406 489 468 497 576 Z"/>
+    <path d="M527 512 C620 508 694 448 712 348 C612 334 535 404 527 512 Z"/>
+  </g>
+</svg>

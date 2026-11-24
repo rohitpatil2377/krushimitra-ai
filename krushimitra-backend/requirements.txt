@@ -1,0 +1,13 @@
+# Core API runtime (light — no PyTorch). Install: pip install -r requirements.txt
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+pydantic-settings>=2.3
+SQLAlchemy>=2.0
+pgvector>=0.3
+psycopg[binary]>=3.2
+PyJWT>=2.8
+python-multipart>=0.0.9
+httpx>=0.27
+alembic>=1.13
+anthropic>=0.49   # Claude SDK — recent version required for adaptive thinking + effort + Opus 4.8

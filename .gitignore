@@ -30,7 +30,12 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
+# local env files — `.env` itself too, not just *.local:
+# EXPO_PUBLIC_* values are bundled into the app anyway, but a stray key here
+# would be committed, and a secret in git history is not really removable.
+.env
+.env.*
+!.env.example
 .env*.local
 
 # typescript

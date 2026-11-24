@@ -1,25 +1,70 @@
 {
   "expo": {
-    "name": "krushimitra-ai",
+    "name": "Krushimitra AI",
     "slug": "krushimitra-ai",
+    "scheme": "krushimitra",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {}
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#F4F8F1",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.krushimitra.ai",
+      "versionCode": 4,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-localization",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "कृषीमित्र AI ला पिकाचा फोटो निवडण्यासाठी तुमच्या फोटोंमध्ये प्रवेश हवा आहे.",
+          "cameraPermission": "कृषीमित्र AI ला पिकाचा फोटो काढण्यासाठी कॅमेरा वापरण्याची परवानगी हवी आहे."
+        }
+      ],
+      "expo-status-bar",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "कृषीमित्र AI ला तुमच्या भागातील अचूक हवामान आणि जवळचे बाजार दाखवण्यासाठी तुमचे ठिकाण हवे आहे.",
+          "locationWhenInUsePermission": "कृषीमित्र AI ला तुमच्या भागातील अचूक हवामान आणि जवळचे बाजार दाखवण्यासाठी तुमचे ठिकाण हवे आहे.",
+          "isAndroidBackgroundLocationEnabled": false
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "895f816b-9f76-4e0a-a106-35a8f9640922"
+      }
     }
   }
 }

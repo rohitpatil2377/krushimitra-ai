@@ -1,0 +1,10 @@
+# Heavy ML deps — only needed when training/serving real vision models (not for the API skeleton).
+# Install in a separate step / GPU box: pip install -r requirements-ml.txt
+torch>=2.2
+torchvision>=0.17
+timm>=1.0
+ultralytics>=8.2
+pillow>=10.3
+numpy>=1.26
+scikit-learn>=1.4
+sentence-transformers>=3.0   # query/document embeddings for RAG (multilingual-e5 / BGE)
